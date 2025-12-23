@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wraith-client"
+version = "0.1.0"
+description = "Python client for Wraith telemetry daemon"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Jason Boykin", email = "jason@autonops.io" },
+]
+keywords = ["telemetry", "infraiq", "wraith"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/infraiq/wraith"
+Repository = "https://github.com/infraiq/wraith"
+
+[tool.hatch.build.targets.wheel]
+packages = ["wraith_client"]
